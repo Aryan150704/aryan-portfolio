@@ -1,4 +1,4 @@
-# Aryan Chaudhary Portfolio — V3 / Systems Edition
+# Aryan Chaudhary Portfolio 
 
 A cinematic, interaction-heavy static portfolio.
 
