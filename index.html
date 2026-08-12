@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aryan Chaudhary — Systems Engineer</title>
+<meta name="description" content="Aryan Chaudhary — software engineer focused on backend systems, performance and full-stack products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><div class="loader-inner"><div class="loader-name">ARYAN<br><i>CHAUDHARY</i></div><div class="loader-track"><span></span></div><div class="loader-meta"><b>BUILDING SYSTEMS</b><b id="pct">00%</b></div></div></div>
+
+<canvas id="webgl"></canvas>
+<div class="grain"></div>
+<div class="cursor"><i></i><b></b><span></span></div>
+<div class="progress"><i></i></div>
+
+<header>
+  <a class="mark magnetic" href="#home"><strong>AC</strong><i></i></a>
+  <div class="header-center"><span></span> ENGINEERING PORTFOLIO <em>2026</em></div>
+  <button class="menu magnetic" id="menu"><i></i><i></i><i></i></button>
+</header>
+
+<div class="nav-overlay" id="navOverlay">
+  <div class="nav-grid">
+    <div class="nav-label">NAVIGATE / 00—06</div>
+    <nav>
+      <a href="#home"><small>01</small>Home</a>
+      <a href="#work"><small>02</small>Work</a>
+      <a href="#lab"><small>03</small>Engineering Lab</a>
+      <a href="#career"><small>04</small>Career</a>
+      <a href="#research"><small>05</small>Research</a>
+      <a href="#contact"><small>06</small>Contact</a>
+    </nav>
+  </div>
+  <div class="nav-bottom"><span>ARYAN CHAUDHARY</span><span>GURUGRAM / INDIA</span></div>
+</div>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-grid">
+    <div class="hero-kicker reveal"><span class="live"></span> SOFTWARE ENGINEER / FULL-STACK</div>
+    <div class="hero-index reveal">01—06</div>
+  </div>
+  <div class="hero-type">
+    <div class="type-row reveal"><small>01</small><h1>BUILD</h1><label>PRODUCT</label></div>
+    <div class="type-row reveal d1"><small>02</small><h1 class="stroke">SYSTEMS</h1><label>BACKEND</label></div>
+    <div class="type-row reveal d2"><small>03</small><h1>THAT</h1><label>PERFORM</label></div>
+    <div class="type-row reveal d3"><small>04</small><h1 class="stroke">UNDER</h1><label>PRESSURE</label></div>
+  </div>
+  <div class="hero-foot reveal">
+    <p>Java / Spring Boot engineer with a TypeScript full-stack edge.<br>500+ DSA problems · performance-minded · systems curious.</p>
+    <a class="scroll magnetic" href="#work"><span>EXPLORE</span><b>↓</b></a>
+  </div>
+  <div class="hero-scroll">SCROLL TO DECOMPOSE <span>↓</span></div>
+</section>
+
+<section id="work" class="section work">
+  <div class="section-head reveal"><div><small>02 / SELECTED WORK</small><h2>Engineering<br><em>receipts.</em></h2></div><p>Three projects. Real constraints.<br>Measured outcomes.</p></div>
+
+  <article class="case reveal" id="driftpad">
+    <div class="case-bar"><span>CASE 01</span><span>DRIFTPAD / 2026</span><button class="case-open" id="caseOpen">OPEN ENGINEERING DEEP DIVE ↗</button></div>
+    <div class="case-hero">
+      <div class="case-title"><small>NEXT.JS 15 · NESTJS · GRAPHQL · PRISMA</small><h3>Drift<span>pad</span></h3><p>A monorepo blog platform built around a GraphQL API and Next.js App Router. The interesting part wasn't shipping the first version — it was finding what slowed it down.</p></div>
+      <div class="case-orb">
+        <div class="orb-ring r1"></div><div class="orb-ring r2"></div><div class="orb-ring r3"></div>
+        <div class="orb-core"><strong>94</strong><i>%</i><small>LATENCY<br>REDUCTION</small></div>
+        <div class="orb-dot d1"></div><div class="orb-dot d2"></div><div class="orb-dot d3"></div>
+      </div>
+    </div>
+    <div class="metrics">
+      <div><strong data-n="1600">0</strong><span>REQ / SEC AVG</span></div>
+      <div><strong data-n="12">0</strong><span>MS MEAN LATENCY</span></div>
+      <div><strong data-n="23">0</strong><span>MS P99</span></div>
+      <div><strong data-n="7800">0</strong><span>COMMENTS TESTED</span></div>
+    </div>
+    <div class="case-flow">
+      <div><small>01 / FAILURE</small><h4>GraphQL throttling broke.</h4><p>Request-context extraction did not match GraphQL's execution model.</p></div>
+      <div class="arrow">→</div>
+      <div><small>02 / DIAGNOSIS</small><h4>Model the boundary.</h4><p>Custom Throttler guard + database investigation using EXPLAIN QUERY PLAN.</p></div>
+      <div class="arrow">→</div>
+      <div><small>03 / OUTCOME</small><h4>Remove the bottleneck.</h4><p>Targeted indexes eliminated a full-table sort and cut comment-fetch latency by 94%.</p></div>
+    </div>
+  </article>
+
+  <div class="split-cases">
+    <article class="small-case reveal magnetic-card">
+      <div class="case-bar"><span>CASE 02</span><span>JAVA / SPRING BOOT</span></div>
+      <div class="case-num">02</div><small class="accent">BACKEND ARCHITECTURE</small><h3>Task<span>Flow</span></h3>
+      <p>Production-ready task management backend with PostgreSQL, Hibernate, JWT authentication and REST APIs.</p>
+      <div class="pipeline"><span>CLIENT</span><b>→</b><span>JWT</span><b>→</b><span>REST</span><b>→</b><span>JPA</span><b>→</b><span>DB</span></div>
+      <ul><li>3-tier RBAC: Owner / Admin / Member</li><li>15+ RESTful endpoints following MVC</li><li>JOIN FETCH optimization for LazyInitializationException bottlenecks</li><li>Railway deployment with production DB configuration</li></ul>
+      <div class="tags">JAVA · SPRING SECURITY · HIBERNATE · POSTGRESQL</div>
+    </article>
+    <article class="small-case reveal magnetic-card">
+      <div class="case-bar"><span>CASE 03</span><span>REAL-TIME / RTC</span></div>
+      <div class="case-num">03</div><small class="accent">REAL-TIME SYSTEMS</small><h3>Video<span>Call</span></h3>
+      <p>Real-time video calling application integrating ZEGOCLOUD SDK with dynamic room provisioning for low-latency communication.</p>
+      <div class="rtc"><div><i></i><small>YOU</small></div><span class="wave">〰〰〰</span><div><i></i><small>PEER</small></div></div>
+      <div class="tags">ZEGOCLOUD · LOW LATENCY · DYNAMIC ROOMS</div>
+    </article>
+  </div>
+</section>
+
+<section id="lab" class="section lab">
+  <div class="section-head reveal"><div><small>03 / ENGINEERING LAB</small><h2>How I<br><em>think.</em></h2></div><p>Not a list of buzzwords.<br>A set of habits.</p></div>
+  <div class="lab-table">
+    <article class="lab-row reveal"><small>01</small><div><h3>Measure before changing.</h3><p>Use load tests and query plans to find the actual bottleneck.</p></div><div class="lab-art chart"><i></i><i></i><i></i><i></i><i></i></div></article>
+    <article class="lab-row reveal"><small>02</small><div><h3>Make boundaries explicit.</h3><p>Authentication, RBAC, contracts and MVC keep growing systems understandable.</p></div><div class="lab-art stack"><b>AUTH</b><b>API</b><b>DOMAIN</b><b>DATA</b></div></article>
+    <article class="lab-row reveal"><small>03</small><div><h3>Debug the model, not the symptom.</h3><p>When an abstraction breaks, understand its execution model before adding patches.</p></div><div class="lab-art chain"><b>BUG</b><i>→</i><b>MODEL</b><i>→</i><b>FIX</b></div></article>
+    <article class="lab-row reveal"><small>04</small><div><h3>Ship the whole loop.</h3><p>Implementation → database → deployment → troubleshooting → feedback.</p></div><div class="lab-art chain"><b>CODE</b><i>→</i><b>BUILD</b><i>→</i><b>DEPLOY</b><i>→</i><b>OBSERVE</b></div></article>
+  </div>
+
+  <div class="stack reveal">
+    <div class="stack-head"><span>STACK / CURRENT</span><span>01—2026</span></div>
+    <div class="stack-row"><label>LANGUAGES</label><div><b>JAVA</b><b>TYPESCRIPT</b><b>JAVASCRIPT</b><b>SQL</b></div></div>
+    <div class="stack-row"><label>BACKEND</label><div><b>SPRING BOOT</b><b>SPRING MVC</b><b>SPRING SECURITY</b><b>HIBERNATE/JPA</b><b>NESTJS</b><b>GRAPHQL</b><b>REST</b></div></div>
+    <div class="stack-row"><label>FRONTEND</label><div><b>NEXT.JS</b><b>REACT</b><b>APP ROUTER</b><b>SERVER ACTIONS</b><b>TAILWIND</b></div></div>
+    <div class="stack-row"><label>DATA / CLOUD</label><div><b>POSTGRESQL</b><b>MYSQL</b><b>PRISMA</b><b>GIT</b><b>VERCEL</b><b>RAILWAY</b><b>DOCKER</b></div></div>
+  </div>
+</section>
+
+<section id="career" class="section career">
+  <div class="section-head reveal"><div><small>04 / CAREER</small><h2>Learning to<br><em>ship.</em></h2></div></div>
+  <div class="timeline">
+    <article class="timeline-item current reveal"><div class="date">JUN 2026 — PRESENT</div><div class="pin"></div><div><h3>Salesforce Trainee <span>ShoNet</span></h3><p>Enterprise CRM customization and workflow automation within Agile/Scrum sprint cycles, translating business requirements into scalable technical solutions.</p><small>SALESFORCE · AGILE / SCRUM · AUTOMATION</small></div></article>
+    <article class="timeline-item reveal"><div class="date">DEC 2025 — MAY 2026</div><div class="pin"></div><div><h3>Salesforce Developer Intern <span>Almamate Infotech</span></h3><p>Developed custom business logic with Apex triggers/classes and built Lightning Web Components for interactive UI features.</p><small>APEX · LWC · SOQL</small></div></article>
+    <article class="timeline-item reveal"><div class="date">JUN — AUG 2024</div><div class="pin"></div><div><h3>Summer Research Intern <span>IIIT Allahabad</span></h3><p>Engineered Python/Pandas ETL pipelines to clean and validate 10,000+ records, improving data integrity and downstream research workflows.</p><small>PYTHON · PANDAS · ETL · RESEARCH</small></div></article>
+  </div>
+</section>
+
+<section id="research" class="section research">
+  <div class="research-card reveal">
+    <div><small>05 / RESEARCH</small><div class="badge">ACCEPTED FOR PUBLICATION</div><h2>Hybrid AI Emotion Detection<br><em>& Summarization Web Application</em></h2><p>Developed a domain-specific NLP system integrating multi-modal emotion detection with extractive/abstractive summarization for context-aware document understanding.</p></div>
+    <div class="neural"><span></span><span></span><span></span><span></span><strong>NLP<small>CONTEXT</small></strong></div>
+  </div>
+</section>
+
+<section class="section about">
+  <div class="about-card reveal">
+    <div><small>06 / ABOUT</small><h2>Curious about<br><em>the why.</em></h2><p>I'm a B.Tech Computer Science & Engineering candidate at Galgotias University, graduating in 2026. My work sits across backend engineering, full-stack product development, data and applied AI.</p><p>I like the stage after “it works”: understanding why it works, finding where it bends under pressure, and making the next version easier to reason about.</p></div>
+    <div class="facts">
+      <div><small>EDUCATION</small><strong>GALGOTIAS UNIVERSITY</strong><span>B.Tech CSE · 2022–2026</span></div>
+      <div><small>CGPA</small><strong>7.98 / 10</strong><span>Academic score</span></div>
+      <div><small>DSA</small><strong>500+ PROBLEMS</strong><span>LeetCode · GFG · CodeChef</span></div>
+      <div><small>CODECHEF</small><strong>1206</strong><span>Rating</span></div>
+      <div class="wide"><small>RESEARCH</small><strong>ACCEPTED FOR PUBLICATION</strong><span>Hybrid AI Emotion Detection and Summarization Web Application</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="contact-orbit"></div>
+  <div class="contact-content reveal"><small>07 / CONTACT</small><h2>Build something<br><em>worth shipping.</em></h2><p>Open to software engineering opportunities where strong fundamentals, backend depth and product thinking matter.</p><div><a class="mail magnetic" href="mailto:157aryan@gmail.com">157aryan@gmail.com <b>↗</b></a><button id="copy">COPY EMAIL</button></div></div>
+</section>
+</main>
+<footer><span>© 2026 ARYAN CHAUDHARY</span><span>JAVA · SYSTEMS · PRODUCT</span><a href="#home">TOP ↑</a></footer>
+<div class="case-modal" id="caseModal">
+  <div class="case-modal-inner">
+    <button class="case-close" id="caseClose">CLOSE ×</button>
+    <div class="modal-kicker">DRIFTPAD / ENGINEERING DEEP DIVE</div>
+    <h2>When the API says<br><em>“not fast enough.”</em></h2>
+    <div class="modal-grid">
+      <div><span>SYMPTOM</span><p>GraphQL throttling was failing at the request-context boundary.</p></div>
+      <div><span>INVESTIGATION</span><p>Mapped GraphQL execution behavior and inspected database plans rather than treating the framework as a black box.</p></div>
+      <div><span>INTERVENTION</span><p>Implemented a custom Throttler guard and added targeted indexes based on measured query behavior.</p></div>
+      <div><span>OUTCOME</span><p>94% lower comment-fetch latency, removal of a full-table sort, and a load-tested API sustaining roughly 1,600 requests/sec.</p></div>
+    </div>
+    <div class="modal-quote">“Measure. Model the boundary. Change one thing. Measure again.”</div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
